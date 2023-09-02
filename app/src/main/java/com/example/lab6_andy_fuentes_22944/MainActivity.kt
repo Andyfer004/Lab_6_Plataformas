@@ -164,7 +164,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 }
 private val usuariosValidos = mapOf(
     "andy" to "1234",
-    "usuario2" to "contraseña2",
+    "Victoria" to "Gatuvela",
     "usuario3" to "contraseña3",
 )
 
