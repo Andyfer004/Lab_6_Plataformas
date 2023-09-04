@@ -95,7 +95,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                 tint = Color.White,
                 modifier = modifier
                     .padding(start = 16.dp)
-                    //.aspectRatio(2f)
+                    //.aspectRatio(2f).
                     .align(Alignment.CenterVertically)
                     .size(400.dp)
             )
