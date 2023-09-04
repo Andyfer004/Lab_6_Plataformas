@@ -61,7 +61,7 @@ class MainActivity2 : ComponentActivity() {
     }
 
 override fun onBackPressed() {
-
+    finishAffinity()
 }
 }
 @Composable
@@ -70,14 +70,39 @@ fun Greeting2() {
     val imageResources = listOf(
         R.drawable.img,
         R.drawable.img_1,
+        R.drawable.img_2,
+        R.drawable.img_3,
+        R.drawable.img_4,
+        R.drawable.img_5,
+        R.drawable.img_6,
+        R.drawable.img_7,
+        R.drawable.img_8,
+        R.drawable.img_9,
     )
     val imageDescriptions = listOf(
         "Camaro Bummblebee",
         "R8",
+        "Mitsubishi Lancer Evolution",
+        "Porche 911 GTS",
+        "Ferrari 488 GTB",
+        "Lamborghini Aventador",
+        "Mustang Shelby GT500CR",
+        "Mazda RX-Vision GT3",
+        "Toyota Supra",
+        "BMW M3"
+
     )
     val imageDescriptions2 = listOf(
         "Chevrolet producidos desde 1966 hasta el presente. ",
         "Audi R8 es un automóvil superdeportivo. ",
+        "Mitsubishi Lancer Evolution es un automóvil de turismo. ",
+        "Porsche 911 es un automóvil deportivo. ",
+        "Ferrari 488 GTB es un automóvil superdeportivo. ",
+        "Lamborghini Aventador es un automóvil superdeportivo. ",
+        "Mustang Shelby GT500CR es un automóvil deportivo. ",
+        "Mazda RX-Vision GT3 es un automóvil deportivo. ",
+        "Toyota Supra es un automóvil deportivo. ",
+        "BMW M3 es un automóvil deportivo. "
     )
 
     var currentIndex by remember { mutableStateOf(0) }
@@ -135,7 +160,7 @@ fun Greeting2() {
             })
         Surface(
             modifier = Modifier
-                .width(550.dp)
+                .width(700.dp)
                 .height(120.dp)
                 .padding(20.dp)
                 .align(Alignment.CenterHorizontally)

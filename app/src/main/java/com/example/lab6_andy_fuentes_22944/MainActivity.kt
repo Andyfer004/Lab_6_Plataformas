@@ -59,7 +59,7 @@ class MainActivity : ComponentActivity() {
         }
     }
     override fun onBackPressed() {
-
+        finishAffinity()
     }
 }
 
@@ -168,9 +168,11 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     }
 }
 private val usuariosValidos = mapOf(
-    "andy" to "1234",
+    "andy" to "affv",
     "Victoria" to "Gatuvela",
-    "usuario3" to "contraseña3",
+    "Luis" to "Luo1",
+    "Luisa" to "Hom1",
+    "Jorge" to "Cjoj2",
 )
 
 private fun ValidUser(text: String, text2: String): Boolean {
